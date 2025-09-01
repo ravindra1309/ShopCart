@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-
-// import './App.css';
-// import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import ProductsPage from './ProductsPage';
 import DealsPage from './DealsPage';
 import CartPage from './CartPage';
