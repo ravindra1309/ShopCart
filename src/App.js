@@ -89,7 +89,9 @@ function App() {
       <div className="App">
         <nav className="navbar shop-navbar">
           <div className="navbar-logo shop-logo">
-            <span className="cart-icon">🛒</span> ShopCart
+            <Link to="/home" className="navbar-home-link">
+              <span className="cart-icon">🛒</span> ShopCart
+            </Link>
           </div>
           <ul className="navbar-links">
             <li><Link to="/home">Home</Link></li>
