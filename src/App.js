@@ -26,13 +26,6 @@ function HomeCarousel({ products }) {
     <div className="carousel-overlay">
       <header className="home-header shop-header">
         <h1>Welcome to ShopCart</h1>
-        <p>Your one-stop shop for amazing products and deals!</p>
-        <div className="home-links">
-          <Link className="home-link-btn" to="/products">Go to Products</Link>
-          <Link className="home-link-btn" to="/deals">View Deals</Link>
-          <Link className="home-link-btn" to="/cart">View Cart</Link>
-          <Link className="home-link-btn" to="/contact">Contact Us</Link>
-        </div>
       </header>
       <section className="carousel-grid-section">
         <h2 className="carousel-title">Featured Products</h2>
@@ -112,6 +105,11 @@ function App() {
             <Route path="/" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
+        <footer className="shop-footer">
+          <div className="footer-content">
+            &copy; {new Date().getFullYear()} ShopCart. All rights reserved.
+          </div>
+        </footer>
       </div>
     </Router>
   );
